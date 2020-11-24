@@ -1,9 +1,11 @@
 name: tests-tickets
 
-on: 
-  pull_request
+on:
+  pull_request:
+    paths:
+      - 'tickets/**'
 
-jobs: 
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
