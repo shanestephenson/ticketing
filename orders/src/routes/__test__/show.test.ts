@@ -60,15 +60,3 @@ it('returns an error if one user tries to fetch another users order', async () =
   .expect(401);
 
 });
-
-
-it('gets the order', async () => {
-  var orderId = '5fbc13023faa75003ef5990b';
-
-  //make request to fetch the order
-  await request(app)
-  .get(`/api/orders/${orderId}`)
-  .set('Cookie', global.signin())
-  .send()
-  .expect(200);
-});
