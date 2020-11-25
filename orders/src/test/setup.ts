@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-//USE fake/mocked NATS Client
+//USE fake/mocked NATS Client 
 jest.mock('../nats-wrapper');
 
 let mongo: any;
